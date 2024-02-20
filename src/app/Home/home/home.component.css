@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+h2 
+{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+h3
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    color:#c30; 
+    padding-left: 25px;
+    
+}
+a {
+    text-decoration: none;
+}
+.ml-5
+{
+    margin-left: 40% !important ;
+} 
+.card
+{
+    text-align: left;
+    margin-top: 30px;
+    border-color: #c30;
+}
+.card p 
+{
+    color: #444444;
+    padding-left: 25px;
+}
+fa-icon {
+    color:#c30;
+    padding: 10px;
+}
+.icon fa-icon
+{
+    font-size: 15px;
+    font-size: solid;
+
+}
+.icon fa-icon:hover{
+    color:#c30;
+      
+}
+
+.icon-top {
+    position:absolute;
+    z-index: 10;
+    right: 2%;
+    top: 2%;
+    background-color: aliceblue;
+    border-radius: 50%;   
+}
+.icon-top button {
+    background-color: aliceblue;
+    border-radius: 50%;
+    outline: none;
+}
+.icon-top:hover button  {
+    background-color: #c30;
+}
+.icon-top fa-icon:hover{
+    color: aliceblue;
+    
+} 
+.card-img {
+    background-color: rgb(251, 253, 253);
+    position: relative;
+	overflow: hidden;
+
+}
+.card-img img{
+    width: 100%;
+	transition: all 0.5s 0.5s;
+}
+
+.card-img:hover img
+{ 
+   
+    transform: scale(1.1);
+
+}
+
+

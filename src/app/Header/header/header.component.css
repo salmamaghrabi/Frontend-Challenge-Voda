@@ -1,0 +1,34 @@
+
+.nav-logo img{
+    width:100px;
+    height: 20px;
+}
+.navbar-nav{
+justify-content: center;    
+}
+.nav-item .nav-link
+{
+    color: #c30;
+    border: aliceblue;
+    font-weight: 700;
+
+}
+.nav-item :hover
+{
+border-bottom: #c30 solid 2px ;  
+}
+
+.form-control{
+    border-radius: 3px;
+    position: absolute;
+    right: 10%;
+    width: 200px;
+}
+ .btn {
+color: aliceblue;
+background-color: black;
+border: 200px;
+position: absolute;
+    right: 4%;
+} 
+ 

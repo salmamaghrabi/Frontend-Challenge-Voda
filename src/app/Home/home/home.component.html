@@ -1,0 +1,57 @@
+<section class="projects p-5 text-left">
+  <div class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active"
+      id="nav-all"
+      role="tabpanel"
+      aria-labelledby="Recipes-tab"
+    >
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Col 1 -->
+          <div class="col-md-4" *ngFor="let food of foods">
+            <div class="card" style="width: 20rem">
+              <div class="card-img">
+                <div class="icon-top">
+                  <!-- <span class="glyphicon glyphicon-heart"></span> -->
+                  <button
+                    type="button"
+                    class="btn"
+                    [routerLink]="['/favorites']"
+                  >
+                    <fa-icon [icon]="faHeart">
+                      <!-- [routerLink]="['/favorites']" -->
+                    </fa-icon>
+                  </button>
+                </div>
+                <a routerLink="/food/{{ food.id }}"
+                  ><img
+                    class="card-img-top img-fluid"
+                    src="{{ food.img }}"
+                    alt="Card image cap"
+                /></a>
+              </div>
+              <div class="card-body">
+                <a routerLink="/food/{{ food.id }}"
+                  ><h3>{{ food.name }}</h3></a
+                >
+                <p class="card-text">{{ food.des }} Price: ${{ food.price }}</p>
+                <hr />
+                <div class="icon">
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faClock"></fa-icon>
+                    {{ food.cookTime }}
+                  </button>
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faThumbsUp"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

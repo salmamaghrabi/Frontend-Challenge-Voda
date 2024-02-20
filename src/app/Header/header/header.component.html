@@ -1,0 +1,37 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="nav-logo"> <img class="img-fluid" src="assets/logo4.png" /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav justify-content-center mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link recipes" routerLink="/home" routerLinkActive="active"
+          >Recipes</a
+        >
+      </li>
+      <li class="nav-item active">
+        <a
+          class="nav-link favorites"
+          routerLink="/favorites"
+          routerLinkActive="active"
+          >Favorites<span></span
+        ></a>
+      </li>
+      <div class="form-group me-auto">
+        <input type="text" class="form-control" placeholder="Search" />
+        <button type="button" class="btn">Search</button>
+      </div>
+    </ul>
+  </div>
+</nav>
